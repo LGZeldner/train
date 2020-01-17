@@ -1,0 +1,25 @@
+{
+  "notes": [
+    {
+      "dateCreation": "17012020",
+      "dateExpiry": "22122020",
+      "data": "Сжечь сарай!",
+      "id": 1
+    },
+    {
+      "dateCreation": "10012020",
+      "dateExpiry": "16012020",
+      "data": "Сжечь сарай!",
+      "id": 2
+    },
+    {
+      "dateCreation": "17012020",
+      "dateExpiry": "01012020",
+      "data": "Новый год!",
+      "id": 3
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
