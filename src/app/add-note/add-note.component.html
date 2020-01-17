@@ -1,0 +1,20 @@
+<form [formGroup]="addForm" (ngSubmit)="onSave()">
+  <div class="grid-container">
+    <div class="grid-x grid-padding-x">
+      <div class="small-2 cell">
+        <label>Дата истечения
+          <input type="text" aria-describedby="dateHelpText" mask="00.00.0000" [showMaskTyped]="true" formControlName="dateExpiry" placeholder="12.12.2020">
+        </label>
+        <p class="help-text" id="dateHelpText">Формат: ДД.ММ.ГГГГ</p>
+      </div>
+      <div class="cell auto">
+        <label>Содержание
+          <textarea formControlName="data" placeholder="Текст заметки"></textarea>
+        </label>
+      </div>
+      <div class="cell shrink align-self-middle">
+        <button type="submit" [disabled]="addForm.invalid" class="success button">Save</button>
+      </div>
+    </div>
+  </div>
+</form>

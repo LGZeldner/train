@@ -1,0 +1,12 @@
+
+<div class="grid-x grid-padding-x">
+  <div class="cell small-2">{{inNote.dateCreation | datePoints}}</div>
+  <div class="cell small-2 bg-success" [ngClass]="{'bg-alert': dateExpired}">{{inNote.dateExpiry | datePoints}}</div>
+  <div class="cell auto">{{inNote.data}}</div>
+  <div class="cell small-2 small button-group no-gaps">
+    <a class="button" (click)="editFlag=!editFlag">Edit</a>
+    <a class="alert button" (click)="onDelNote()">Delete</a>
+  </div>
+</div>
+<app-add-note *ngIf="editFlag" [edNote]="inNote" (editFlag)="editFlag=$event"></app-add-note>
+<hr>

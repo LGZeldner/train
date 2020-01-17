@@ -1,0 +1,7 @@
+<br>
+<div class="grid-container">
+  <app-view-note *ngFor="let note of notesService.notes | sortNotes:sortDateType"
+                 [inNote]="note"
+                 (delNote)="notesService.on_del_note($event)" >
+  </app-view-note>
+</div>

@@ -1,0 +1,13 @@
+<div class="callout">
+  <h4>Сортировать по: </h4>
+  <div class="button-group">
+    <button class="button" (click)="toggleSortCreation()">Дате создания</button>
+    <button class="button" (click)="toggleSortExpiry()">Дате истечения</button>
+  </div>
+</div>
+
+<!--<app-view-note *ngFor="let note of notesService.notes | sortNotes:sortDateType"
+               [inNote]="note"
+               (delNote)="notesService.on_del_note($event)" >
+</app-view-note>-->
+<app-notes-list [sortDateType]="sortDateType"></app-notes-list>
